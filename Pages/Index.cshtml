@@ -1,0 +1,312 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "homepage";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Movie World Page
+    </title>
+    <link rel="stylesheet" href="Design.css" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            background: url(https://million-wallpapers.com/wallpapers/4/0/514269517709190/wall-of-rocks.jpg);
+            background-color: black;
+            background-size: cover;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .img {
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            align-items: center;
+        }
+
+        h4 {
+            background-color: white;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            color: red;
+            text-decoration: none;
+            text-align: center;
+            transition: 0.3s;
+            font: 300;
+        }
+
+            h4:hover {
+                border: 6px solid red;
+                color: red;
+                text-decoration: none;
+                text-decoration-color: red;
+                transform: scale(1.02);
+            }
+
+        h1 {
+            background-color: white;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            color: red;
+            text-decoration: none;
+            text-align: center;
+            transition: 0.3s;
+            font: 300;
+        }
+    </style>
+</head>
+
+
+
+    <div class="body">
+
+        <div align="center">
+            <h1 style="color : red">
+                MOVIE WORLD
+            </h1>
+
+        </div>
+
+        <div class="text-center">
+            <h4 align="center"> RECENT MOVIE TRAILERS!</h4>
+        </div>
+
+        <div class="h4">
+            <div class="container-fluid">
+
+
+                <div id="myCarousel" class="carousel slide bg-inverse w-50 h-100 ms-auto me-auto" data-bs-ride="carousel">
+
+                    <ul class="carousel-indicators">
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                    </ul>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active">
+                            <a href="https://youtu.be/-tnxzJ0SSOw" target="_blank" class="btn">
+                                <img src=https://th.bing.com/th/id/OIP.qKEtpbTNWdf1E-4pEGCCGgAAAA?pid=ImgDet&rs=1 class="img" title="Amazing Spider-Man"/>
+                            </a>
+                            <div><h3 style="color:red"> Only R30 !</h3></div>
+
+                            <div class="Rent">
+                                <h4>
+                                    <a href="https://localhost:7020/Identity/Account/Login?ReturnUrl=%2FMovies"> RENT NOW ! </a>
+                                </h4>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item ">
+                            <a href="https://youtu.be/X0tOpBuYasI" target="_blank" class="btn">
+                            <img src=https://www.theilluminerdi.com/wp-content/uploads/2022/09/black-adam-heroes.jpg class="img" title="Black Adam" />
+                            </a>
+                            <div><h3 style="color:red">Only R40 !</h3></div>
+
+                            <div class="Rent">
+                                <h4>
+                                    <a href="https://localhost:7020/Identity/Account/Login?ReturnUrl=%2FMovies"> RENT NOW ! </a>
+                                </h4>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item ">
+                            <a href="https://youtu.be/zkGG5C0hmTM" target="_blank" class="btn">
+                            <img src=https://www.miroir-mag.fr/wp-content/uploads/2021/08/zzG3ODsJ08o.jpg class ="img" title="Fast And Furious 10" />
+                            </a>
+                            <div><h3 style="color:red">Only R70 !</h3></div>
+
+                            <div class="Rent">
+                                <h4>
+                                    <a href="https://localhost:7020/Identity/Account/Login?ReturnUrl=%2FMovies"> RENT NOW ! </a>
+                                </h4>
+                            </div>
+
+                        </div>
+
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+
+
+                    </div>
+                    <!--end of carousel-inner->
+
+
+
+                    </div> <!--end of carousel slide-->
+
+
+
+                </div> <!--end of container-fluid -->
+
+                <h4>
+                    Movies Promo
+                    <br>
+                    Rent one of this movies at R40, Get Two at R70  and Three at R100!
+                </h4>
+                <div class="container-fluid">
+
+                    <a href="https://youtu.be/itnqEauWQZM" target="_blank" class="btn">
+                        <img src=https://th.bing.com/th/id/R.0ce5f4da1bc802ba10d260a37cae327c?rik=Iq83EtAA2ee4Sg&pid=ImgRaw&r=0.jpg class="img" title="Transformers" />
+                    </a>
+
+
+                    <a href="https://youtu.be/7SlILk2WMTI" target="_blank" class="btn">
+                        <img src=https://th.bing.com/th/id/R.a4d4790721df822939f464eef35c7328?rik=RmLdJ%2bOtDQ729g&pid=ImgRaw&r=0.jpg class="img" title="Captain America" />
+                    </a>
+
+
+
+                    <a href="https://youtu.be/T1NeHRuPpoM" target="_blank" class="btn">
+                        <img src=https://th.bing.com/th/id/R.4a53de756fc6221a75227598cf8685b4?rik=EuIE2wiG02H3Mw&riu=http%3a%2f%2fwoodturtle.files.wordpress.com%2f2013%2f09%2fcinderelladisney.jpg&ehk=IxNxQLZeL4NZzUGFVyCyrE%2byx69lxQLAvSXldbU9hdk%3d&risl=&pid=ImgRaw&r=0  class="img" title="Cinderella" />
+                    </a>
+
+
+
+                    <div class="Rent">
+                        <h4>
+                            <a href="https://localhost:7020/Identity/Account/Login?ReturnUrl=%2FMovies"> RENT NOW ! </a>
+                        </h4>
+                    </div>
+                </div>
+                <hr>
+                <h4>
+                    Mostly Watched !
+                </h4>
+
+                 <div class="container-fluid">
+
+                    <div id="myCarousel2" class="carousel slide bg-inverse w-50 h-100 ms-auto me-auto" data-bs-ride="carousel">
+
+                        <ul class="carousel-indicators">
+                            <li data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#myCarousel2" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#myCarousel2" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#myCarousel2" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#myCarousel2" data-bs-slide-to="4"></li>
+
+                        </ul>
+
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="carousel-item active">
+                                <a href="https://youtu.be/-Vui-DhwIAg" target="_blank" class="btn">
+                                    <img src=https://th.bing.com/th/id/R.a594afe5cc14c07b2f05e3c66bbc5e6b?rik=V2HmJEdiRylhhA&pid=ImgRaw&r=0.jpg class="img" title="Cars" />
+                                </a>
+                                <div><h3 style="color:red">Only R30 !</h3></div>
+
+                                <div class="Rent">
+                                    <h4>
+                                        <a href="https://localhost:7020/Identity/Account/Login?ReturnUrl=%2FMovies"> RENT NOW ! </a>
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <a href="https://youtu.be/MyqZf8LiWvM" target="_blank" class="btn">
+                                    <img src=https://th.bing.com/th/id/R.4ba5158f323d801970bc992ca8c6055e?rik=0EEndAxzl99r8w&pid=ImgRaw&r=0.jpg class="img" title="Home" />
+                                </a>
+                                <div><h3 style="color:red">Only R30 !</h3></div>
+
+                                <div class="Rent">
+                                    <h4>
+                                        <a href="https://localhost:7020/Identity/Account/Login?ReturnUrl=%2FMovies"> RENT NOW ! </a>
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <a href="https://youtu.be/WEtBhq5IRmY" target="_blank" class="btn">
+                                    <img src=https://static-us-east-2-fastly-a.www.philo.com/gracenote/assets/p14289024_v_h8_aa.jpg class="img" title="Acrimony" />
+                                </a>
+                                <div><h3 style="color:red">Only R40 !</h3></div>
+
+                                <div class="Rent">
+                                    <h4>
+                                        <a href="https://localhost:7020/Identity/Account/Login?ReturnUrl=%2FMovies"> RENT NOW ! </a>
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <a href="https://youtu.be/5fKn0Dhj64w" target="_blank" class="btn">
+                                    <img src=https://getindianews.com/wp-content/uploads/2021/07/The-Kissing-Booth-3-Official-Trailer-1068x601.jpg class="img" title="Kissing Booth 3" />
+                                </a>
+                                <div><h3 style="color:red">Only R50 !</h3></div>
+
+                                <div class="Rent">
+                                    <h4>
+                                        <a href="https://localhost:7020/Identity/Account/Login?ReturnUrl=%2FMovies"> RENT NOW ! </a>
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <a href="https://youtu.be/sX6m9ifjxzE" target="_blank" class="btn">
+                                    <img src=https://images.fanart.tv/fanart/superintelligence-601113aea0065.jpg class="img" title="Superintelligence" />
+                                </a>
+                                <div><h3 style="color:red">Only R50 !</h3></div>
+
+                                <div class="Rent">
+                                    <h4>
+                                        <a href="https://localhost:7020/Identity/Account/Login?ReturnUrl=%2FMovies"> RENT NOW ! </a>
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <a class="carousel-control-prev" href="#myCarousel2" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel2" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+
+
+                        </div>
+
+                     </div>
+
+
+                 </div> 
+
+
+             </div> 
+        </div> 
+
+</html>
+
+

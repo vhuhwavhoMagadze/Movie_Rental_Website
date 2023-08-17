@@ -1,0 +1,47 @@
+﻿<!--GROUP MEMBERS-->
+<!---
+V MAGADZE , 221003528
+WS MATHONSI , 221048104
+LJ Cloete , 221036622
+M VAN HUYSSTEEN , 221044791
+TK Kolane , 221000590
+ZN Toise , 221025595
+------>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<style>
+    body {
+        background: url(https://million-wallpapers.com/wallpapers/4/0/514269517709190/wall-of-rocks.jpg);
+        background-size: cover;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+</style>
+
+
+<body class="body">
+    <ul class="navbar-nav">
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
+            </li>
+            <li class="nav-item">
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                    <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                </form>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            </li>
+        }
+    </ul>
+
+</body>

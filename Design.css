@@ -1,0 +1,269 @@
+
+
+
+body {
+    background: url(https://wallpaperaccess.com/full/4839516.jpg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.accordion-item {
+    background: gray;
+    color: black;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+}
+
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+    .accordion-item-header::after {
+        content: "\002B";
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .accordion-item-header.active::after {
+        content: "\2212";
+    }
+
+.accordion-item-body {
+    display: none;
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid #34495e;
+    border-image: linear-gradient(to right, white, transparent) 1;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-item-header.active + .accordion-item-body {
+    display: block;
+}
+
+#heading {
+    text-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.slide-1 {
+    background: url('../img/1.jpg');
+}
+
+.slide-2 {
+    background: url('../img/2.jpg');
+}
+
+.slide-3 {
+    background: url('../img/3.jpg');
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.caption {
+    background: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px 0px;
+}
+
+    .caption h3 {
+        color: #fff;
+        text-align: center;
+        font-size: 50px;
+        padding: 18px;
+    }
+
+    .caption p {
+        max-width: 600px;
+        width: 90%;
+        margin: 0px auto;
+        color: #ccc;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+}
+
+    .arrow img {
+        width: 50px;
+    }
+
+    .arrow:hover {
+        background: rgba(0, 0, 0, .4);
+    }
+
+.l {
+    left: 0;
+}
+
+.r {
+    right: 0;
+}
+
+.glass-panel {
+    color: rgb(255, 0, 0);
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    border-radius: 15px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+}
+
+.glass-button {
+    display: inline-block;
+    padding: 24px 32px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+    .glass-button:hover {
+        background-color: rgb(255, 0, 0);
+    }
+
+.bxs-camera-movie {
+    color: red;
+    font-size: 30px;
+}
+
+.glow-on-hover {
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+        color: white
+    }
+
+        .glow-on-hover:active:after {
+            background: transparent;
+        }
+
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: white;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.bx-play-circle {
+    font-size: 30px;
+}
